@@ -18,6 +18,8 @@ zuul:
     redis.path: /redis/** # 把myUser打头的所有请求都转发给user-provider
     page.serviceId: hrm-page
     page.path: /page/** # 把myUser打头的所有请求都转发给user-provider
+    agent.serviceId: hrm-agent
+    agent.path: /agent/** # 把myUser打头的所有请求都转发给user-provider
   ignored-services: "*" #所有服务都不允许以服务名来访问
   prefix: "/services" #加一个统一前缀
   retryable: true #是否重试
